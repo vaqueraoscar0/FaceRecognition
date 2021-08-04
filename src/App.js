@@ -78,7 +78,7 @@ class App extends Component {
 
 
   render() {
-      const { isSignedIn, imageUrl, route, box} = this.state;
+      const { isSignedIn, route, imageURL, box} = this.state;
 
     return (
         <div className="App">
@@ -93,7 +93,7 @@ class App extends Component {
                     <ImageLinkForm
                     onInputChange={this.onInputChange}
                     onButtonSubmit={this.onButtonSubmit}/>
-                    <FaceRecognition box={box} imageURL={imageUrl}/>
+                    <FaceRecognition box={box} imageURL={imageURL}/>
                 </div>
                 :(
                     route === 'signin'
